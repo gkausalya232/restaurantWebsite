@@ -1,0 +1,284 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(90, 7, 12);
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 0px;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content:left;
+}
+
+.logo {
+    height: auto;
+    max-width: 150px;
+    margin-left: 10px;
+    margin-right: 400px;
+}
+
+header h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: xxx-large;
+    margin-top: 20px;
+    margin: 0; /* Ensure there is no margin around the h2 */
+    color: white; /* Optional: Ensure the text color matches the site theme */
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-top: 30px;
+    flex-grow: 2;
+    margin-left: 120px;
+    margin-top: -100px;
+    margin-bottom: 70px;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #0a0a0a;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #852f2f;
+    color: black;
+}
+
+/* Discount Offer Section Styling */
+.discount-offer {
+    background-image: url('https://img.freepik.com/premium-photo/indian-chicken-biryani-spicy-chicken-biryani-food-photography-flying-food-black-background_875825-50413.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.discount-offer::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.discount-offer h1,
+.discount-offer p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+
+.discount-offer h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.discount-offer p {
+    font-size: 1em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Content Section Styling */
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f0c535;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    flex: 1 1 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h2 {
+    color: #333;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #460c02;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Menu Section Styling */
+.menu-container {
+    padding: 20px;
+    text-align: center;
+}
+.menu-container h1{
+    color: #f9f9f9;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: calc(33% - 40px);
+    vertical-align: top;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.menu-item h2 {
+    color: #fefafa;
+    margin-top: 10px;
+}
+
+.menu-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    bottom: 0;
+    clear: both;
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-top: 3px solid #0a0a0a;
+    max-width: 16000px;
+}
+
+/* Booking Page Form Styling */
+.booking {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.booking h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.booking form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.booking form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.booking form button:hover {
+    background: #555;
+}
+
+/* About Section Styling */
+.about {
+    padding: 40px 40px;
+    background-color: rgb(190, 179, 179); /* Set background color to the desired color */
+    color: rgb(4, 4, 4); /* Set text color to white */
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.about t1{
+    
+    display: flex;
+    margin-top: 30px;
+    flex-grow: 2;
+    margin-left: 650px;
+    margin-top: -100px;
+    margin-bottom: 70px;
+
+}
+
+
+.about h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: rgb(10, 10, 10); /* Ensure the heading text is white */
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: rgb(2, 2, 2); /* Ensure the paragraph text is white */
+}
